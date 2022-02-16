@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ERC Plots</title>
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            iframe {
+                width: 100%;
+                height: 500px;
+                border: none;
+            }
+
+            button {
+                float: right;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="plot in plots">
+                <h1>{{ plot.title }}</h1>
+                <button @click="plot.isVisible = !plot.isVisible">{{ plot.isVisible ? 'Hide': 'Show' }} Plot</button>
+                <p>{{ plot.description }}</p>
+                <iframe :src="plot.src" v-if="plot.isVisible"></iframe>
+                <p v-if="plot.isVisible" style="text-align: center;">{{ plot.src }}</p>
+                <hr>
+            </div>
+        </div>
+    </body>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                plots: []
+            },
+            created: async function() {
+                const plotsReq = await fetch('plots.json');
+                this.plots = await plotsReq.json();
+            }
+        });
+    </script>
+</html>
