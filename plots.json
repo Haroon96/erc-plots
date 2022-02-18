@@ -1,30 +1,30 @@
 [{
-    "title": "News Random - Political",
+    "title": "Random - Political",
     "description": "Plot of political videos on the homepage after intervention using random news videos.",
     "src": "news-random-political.html",
     "isVisible": false
 },{
-    "title": "News Popular - Political",
+    "title": "Popular - Political",
     "description": "Plot of political videos on the homepage after intervention using popular news videos.",
     "src": "news-popular-political.html",
     "isVisible": false
 },{
-    "title": "News Random - News",
+    "title": "Random - News",
     "description": "Plot of news videos on the homepage after intervention using random news videos.",
     "src": "news-random-news.html",
     "isVisible": false
 },{
-    "title": "News Popular - News",
+    "title": "Popular - News",
     "description": "Plot of news videos on the homepage after intervention using popular news videos.",
     "src": "news-popular-news.html",
     "isVisible": false
 },{
-    "title": "News Random - News + Political",
+    "title": "Random - News + Political",
     "description": "Plot of political news videos on the homepage after intervention using random news videos.",
     "src": "news-random-political-news.html",
     "isVisible": false
 },{
-    "title": "News Popular - News + Political",
+    "title": "Popular - News + Political",
     "description": "Plot of political news videos on the homepage after intervention using popular news videos.",
     "src": "news-popular-political-news.html",
     "isVisible": false
