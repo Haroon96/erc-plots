@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ERC Plots</title>
+        <title>Alpha Injections</title>
         <style>
             * {
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,8 +21,6 @@
     </head>
     <body>
         <div id="app">
-            <a href="/alpha">Alpha Plots</a>
-            <a href="/absolute">Absolute Plots</a>
             <div v-for="plot in plots">
                 <h1>{{ plot.title }}</h1>
                 <button @click="plot.isVisible = !plot.isVisible">{{ plot.isVisible ? 'Hide': 'Show' }} Plot</button>
