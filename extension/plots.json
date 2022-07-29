@@ -1,0 +1,16 @@
+[{
+    "title": "Political",
+    "description": "Plot of political videos on the homepage after training.",
+    "src": "political.html",
+    "isVisible": false
+},{
+    "title": "News",
+    "description": "Plot of news videos on the homepage after training.",
+    "src": "political.html",
+    "isVisible": false
+},{
+    "title": "Political + News",
+    "description": "Plot of political news videos on the homepage after training.",
+    "src": "political+news.html",
+    "isVisible": false
+}]
