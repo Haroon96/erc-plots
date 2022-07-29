@@ -6,7 +6,7 @@
 },{
     "title": "News",
     "description": "Plot of news videos on the homepage after training.",
-    "src": "political.html",
+    "src": "news.html",
     "isVisible": false
 },{
     "title": "Political + News",
